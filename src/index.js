@@ -1,20 +1,20 @@
 const btn = document.querySelector('.start-game');
 
-function getMonth() {
-    let num = Number(prompt('Введите число'));
-    if (num > 0 && num <= 2 || num === 12) {
+function getMonthByNumber() {
+    let monthNumber = Number(prompt('Введите число'));
+    if (monthNumber > 0 && monthNumber <= 2 || monthNumber === 12) {
       alert('Зима');
       return;
     }
-    else if (num > 2 && num <= 5) {
+    else if (monthNumber > 2 && monthNumber <= 5) {
       alert('Весна');
       return;
     }
-    else if (num > 5 && num <= 8) {
+    else if (monthNumber > 5 && monthNumber <= 8) {
       alert('Лето');
       return;
     }
-    else if (num > 8 && num <= 11) {
+    else if (monthNumber > 8 && monthNumber <= 11) {
       alert('Осень');
       return;
     }
